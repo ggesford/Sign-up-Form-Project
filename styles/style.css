@@ -83,6 +83,10 @@ a {
   justify-content: space-between;
 }
 
+#form-side {
+  min-height: 100vh;
+}
+
 #brand-band {
   text-align: center;
   margin-top: 50%;
