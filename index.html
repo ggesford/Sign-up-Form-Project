@@ -36,45 +36,60 @@
       </p>
     </div>
     <div id="form-side">
-      <div>
+      <div class="content-box">
         <p class="content-text">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up now
           to get started.
         </p>
         <p class="content-text">You know you want to.</p>
-        <h1 class="content-text">Let's do this!</h1>
-        <form action="" method="post">
-          <fieldset>
-            <div class="input">
-              <label for="firstName">FIRST NAME</label>
-              <input type="text" name="firstName" id="firstName" />
-            </div>
-            <div class="input">
-              <label for="lastName">LAST NAME</label>
-              <input type="text" name="lastName" id="lastName" />
-            </div>
-            <div class="input">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="input">
-              <label for="tel">PHONE NUMBER</label>
-              <input type="tel" name="tel" id="tel" />
-            </div>
-            <div class="input">
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
-            </div>
-            <div class="input">
-              <label for="conPassword">CONFIRM PASSWORD</label>
-              <input type="password" name="conPassword" id="conPassword" />
-            </div>
-          </fieldset>
-          <button type="submit">Create Account</button>
-        </form>
-        <p id="redirect">Already have an account? <a>Log in</a></p>
       </div>
+      <h1 class="content-text">Let's do this!</h1>
+      <span class="required-text">* indicates a required field</span>
+      <form action="" method="post">
+        <fieldset>
+          <div class="input">
+            <label for="firstName">FIRST NAME*</label>
+            <input type="text" name="firstName" id="firstName" required />
+          </div>
+          <div class="input">
+            <label for="lastName">LAST NAME*</label>
+            <input type="text" name="lastName" id="lastName" required />
+          </div>
+          <div class="input">
+            <label for="email">EMAIL*</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="input">
+            <label for="tel">PHONE NUMBER (optional)</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD*</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="4"
+              maxlength="16"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="conPassword">CONFIRM PASSWORD*</label>
+            <input
+              type="password"
+              name="conPassword"
+              id="conPassword"
+              minlength="4"
+              maxlength="16"
+              required
+            />
+          </div>
+        </fieldset>
+        <button type="submit">Create Account</button>
+        <p id="redirect">Already have an account? <a>Log in</a></p>
+      </form>
     </div>
   </body>
 </html>
