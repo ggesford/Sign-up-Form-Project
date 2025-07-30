@@ -152,15 +152,21 @@ input {
   outline: none;
 }
 
-input:focus,
-input:focus:invalid {
-  border: solid 2px #455581;
+input:user-focus,
+input:user-focus:user-invalid {
+  border: solid 2px blue;
   background-color: white;
   box-shadow: 3px 3px 3px hsl(0deg 0% 0% / 0.4);
 }
 
-input:invalid {
-  border: solid 2px #79343f;
+input:user-invalid {
+  border: solid 2px red;
+  background-color: pink;
+}
+
+input:user-valid {
+  border: solid 2px green;
+  background-color: #80ef80;
 }
 
 label {

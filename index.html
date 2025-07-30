@@ -50,19 +50,39 @@
         <fieldset>
           <div class="input">
             <label for="firstName">FIRST NAME*</label>
-            <input type="text" name="firstName" id="firstName" required />
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="John"
+            />
           </div>
           <div class="input">
             <label for="lastName">LAST NAME*</label>
-            <input type="text" name="lastName" id="lastName" required />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Smith"
+            />
           </div>
           <div class="input">
             <label for="email">EMAIL*</label>
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="blank@blank.com"
+            />
           </div>
           <div class="input">
             <label for="tel">PHONE NUMBER (optional)</label>
-            <input type="tel" name="tel" id="tel" />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+1(234)567-8910"
+            />
           </div>
           <div class="input">
             <label for="password">PASSWORD*</label>
@@ -72,6 +92,7 @@
               id="password"
               minlength="4"
               maxlength="16"
+              placeholder="4-16 characters"
               required
             />
           </div>
@@ -83,6 +104,7 @@
               id="conPassword"
               minlength="4"
               maxlength="16"
+              placeholder="Must match password"
               required
             />
           </div>
