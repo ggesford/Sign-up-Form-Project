@@ -3,8 +3,6 @@
   src: url("../font/Norse-Bold.otf");
 }
 
-@media (min-width: 768px) {
-}
 *,
 *::before,
 *::after {
@@ -152,8 +150,18 @@ input {
   outline: none;
 }
 
-input:user-focus,
-input:user-focus:user-invalid {
+input.touched:valid {
+  border: solid 2px green;
+  background-color: #80ef80;
+}
+
+input.touched:invalid {
+  border: solid 2px red;
+  background-color: pink;
+}
+
+input:focus,
+input:focus:user-invalid {
   border: solid 2px blue;
   background-color: white;
   box-shadow: 3px 3px 3px hsl(0deg 0% 0% / 0.4);
@@ -235,4 +243,67 @@ img {
 
 .content-box {
   background-color: #f9fafc;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.required {
+  color: red;
+}
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+
+  #image-side {
+    width: 40%;
+  }
+
+  .scroll-msg {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .chevron {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  input {
+    min-width: 25%;
+  }
+
+  fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 60%;
+  }
 }

@@ -6,10 +6,12 @@
     <title>|Sign-up Form|</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preload" as="image" href="./image/bg-image.webp" />
+    <link rel="preload" as="image" href="./image/odin-lined.png" />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
-    <div id="image-side">
-      <div id="brand-band">
+    <aside id="image-side">
+      <header id="brand-band">
         <div class="logo-container">
           <img
             src="image/odin-lined.png"
@@ -19,10 +21,10 @@
         </div>
 
         <p>Sign-up now and join millions</p>
-      </div>
+      </header>
       <p class="scroll-msg">SCROLL DOWN</p>
       <div class="chevron"></div>
-      <p id="image-credit">
+      <footer id="image-credit">
         Photo by
         <a
           href="https://unsplash.com/@_hues?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -33,46 +35,63 @@
           href="https://unsplash.com/photos/a-close-up-of-a-rock-with-a-yellow-line-on-it-x_GeJ8MFYXI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
           >Unsplash</a
         >
-      </p>
-    </div>
-    <div id="form-side">
-      <div class="content-box">
+      </footer>
+    </aside>
+    <main id="form-side">
+      <section class="content-box">
         <p class="content-text">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams. Sign up now
           to get started.
         </p>
         <p class="content-text">You know you want to.</p>
-      </div>
+      </section>
       <h1 class="content-text">Let's do this!</h1>
-      <span class="required-text">* indicates a required field</span>
-      <form action="" method="post">
+      <small class="required-text" aria-hidden="true"
+        ><span class="required" aria-hidden="true">*</span> indicates a required
+        field</small
+      >
+      <form action="#" method="post">
         <fieldset>
+          <legend class="visually-hidden">Sign-up Form</legend>
           <div class="input">
-            <label for="firstName">FIRST NAME*</label>
+            <label for="firstName"
+              >FIRST NAME<span class="required" aria-hidden="true"
+                >*</span
+              ></label
+            >
             <input
               type="text"
               name="firstName"
               id="firstName"
               placeholder="John"
+              required
             />
           </div>
           <div class="input">
-            <label for="lastName">LAST NAME*</label>
+            <label for="lastName"
+              >LAST NAME<span class="required" aria-hidden="true"
+                >*</span
+              ></label
+            >
             <input
               type="text"
               name="lastName"
               id="lastName"
               placeholder="Smith"
+              required
             />
           </div>
           <div class="input">
-            <label for="email">EMAIL*</label>
+            <label for="email"
+              >EMAIL<span class="required" aria-hidden="true">*</span></label
+            >
             <input
               type="email"
               name="email"
               id="email"
               placeholder="blank@blank.com"
+              required
             />
           </div>
           <div class="input">
@@ -85,7 +104,9 @@
             />
           </div>
           <div class="input">
-            <label for="password">PASSWORD*</label>
+            <label for="password"
+              >PASSWORD<span class="required" aria-hidden="true">*</span></label
+            >
             <input
               type="password"
               name="password"
@@ -97,7 +118,11 @@
             />
           </div>
           <div class="input">
-            <label for="conPassword">CONFIRM PASSWORD*</label>
+            <label for="conPassword"
+              >CONFIRM PASSWORD<span class="required" aria-hidden="true"
+                >*</span
+              ></label
+            >
             <input
               type="password"
               name="conPassword"
@@ -110,8 +135,8 @@
           </div>
         </fieldset>
         <button type="submit">Create Account</button>
-        <p id="redirect">Already have an account? <a>Log in</a></p>
+        <p id="redirect">Already have an account? <a href="#">Log in</a></p>
       </form>
-    </div>
+    </main>
   </body>
 </html>
