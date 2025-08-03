@@ -306,4 +306,12 @@ img {
     flex-wrap: wrap;
     min-width: 60%;
   }
+
+  .content-box {
+    padding-top: 12%;
+  }
+
+  .content-text {
+    margin-left: 24px;
+  }
 }
