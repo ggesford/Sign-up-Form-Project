@@ -303,7 +303,12 @@ img {
   }
 
   input {
-    min-width: 25%;
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .input {
+    margin-right: 5rem;
   }
 
   fieldset {
@@ -311,6 +316,7 @@ img {
     flex-wrap: wrap;
     min-width: 60%;
     padding: 2.5rem;
+    padding-right: 10rem;
   }
 
   .content-box {
@@ -319,6 +325,7 @@ img {
 
   .content-text {
     padding-left: 2.5rem;
+    padding-right: 10rem;
   }
 
   .required-text {
@@ -330,6 +337,11 @@ img {
     padding-top: 0;
   }
 
-  form {
+  #redirect {
+    padding-left: 2.5rem;
+  }
+
+  button {
+    margin-left: 2.5rem;
   }
 }
