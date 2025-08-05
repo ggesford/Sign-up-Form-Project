@@ -92,10 +92,13 @@ h6 {
 
 #form-side {
   min-height: 100vh;
+  background-color: #f9fafc;
 }
 
 .content-text {
   padding: 1rem;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 #form-side h1 {
@@ -185,6 +188,8 @@ form {
   border: none;
   background-color: #f9fafc;
   margin: 0;
+  height: 100%;
+  max-height: max-content;
 }
 
 fieldset {
@@ -305,6 +310,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 60%;
+    padding: 2.5rem;
   }
 
   .content-box {
@@ -312,6 +318,18 @@ img {
   }
 
   .content-text {
-    margin-left: 24px;
+    padding-left: 2.5rem;
+  }
+
+  .required-text {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-top: 0;
+  }
+
+  form {
   }
 }
